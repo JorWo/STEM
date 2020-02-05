@@ -7,7 +7,7 @@ cur = db.cursor(MySQLdb.cursors.DictCursor)
 db.autocommit(True)
 
 #Create table as per requirement
-sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Joe', 17, 12)"
+sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Joe', '17', '12')"
 
 cur.execute(sql)
 
