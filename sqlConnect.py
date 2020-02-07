@@ -5,7 +5,7 @@ db = MySQLdb.connect(host="localhost", user="user", passwd="password", db="schoo
 
 cur = db.cursor(MySQLdb.cursors.DictCursor)
 
-#Create table as per requirement
+#SQL select all statement
 sql = "SELECT * from students"
 
 cur.execute(sql)
