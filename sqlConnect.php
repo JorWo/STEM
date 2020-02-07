@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully"."<br>";
 
-$sql = "SELECT name, age, gradeLevel FROM students";
+$sql = "SELECT * FROM students";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
