@@ -5,7 +5,7 @@ db = MySQLdb.connect(host="localhost", user="user", passwd="password", db="schoo
 
 cur = db.cursor(MySQLdb.cursors.DictCursor)
 
-#Create table as per requirement
+#SQL update statement
 sql = "UPDATE students SET age=16 WHERE name='Joe' "
 
 cur.execute(sql)
