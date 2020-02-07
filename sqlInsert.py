@@ -6,7 +6,7 @@ db = MySQLdb.connect(host="localhost", user="user", passwd="password", db="schoo
 cur = db.cursor(MySQLdb.cursors.DictCursor)
 db.autocommit(True)
 
-#Create table as per requirement
+#SQL insert statement
 sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Joe', '17', '12')"
 
 cur.execute(sql)
