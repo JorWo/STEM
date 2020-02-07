@@ -7,11 +7,12 @@ $dbname = "school";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+/* Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully"."<br>";
+*/
 
 $sql = "UPDATE students SET age = 17 WHERE name = 'Jordan' ";
 $result = $conn->query($sql);
